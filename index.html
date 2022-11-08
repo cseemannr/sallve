@@ -20,17 +20,14 @@
     <link rel="stylesheet" href="css\style.css" />
 
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="container nav-lime">
-        <a href="#">frete grátis site todo ⚡</a>
+        <a id="header-nav-lime" href="#">frete grátis acima de R$109 😎</a>
         <div class="nav-lime-counter">
           <span class="nav-lime-number">37</span
           ><span class="nav-lime-colon">:</span
@@ -41,12 +38,6 @@
       </div>
 
       <div class="nav-main">
-        <div class="nav-main-logo">
-          <img
-            src="img\marca_sallve-2_a948a523-fda3-4a3c-a3f6-9faf1bc01317.gif"
-            alt=""
-          />
-        </div>
 
         <div class="nav-main-left">
           <div class="nav-main-search-box">
@@ -61,40 +52,66 @@
 
           <div class="dropdown">
             <a class="dropdown-link" href="#"
-              >loja
-              <ion-icon
-                class="dropdown-down-icon dropdown-icon"
-                name="caret-down-outline"
-              ></ion-icon>
-              <ion-icon
-                class="dropdown-up-icon dropdown-icon"
-                name="caret-up-outline"
-              ></ion-icon
-            ></a>
+              >compre
+              <ion-icon class="dropdown-icon down-icon" name="chevron-down-outline"></ion-icon>
+              <ion-icon class="dropdown-icon up-icon" name="chevron-up-outline"></ion-icon>
+            </a>
 
             <div class="dropdown-content">
-              <a href="">seleção de inverno até 30%</a>
-              <a href="#">mais vendidos</a>
-              <a href="#">kits incríveis</a>
-              <a href="#">limpeza</a>
-              <a href="#">tratamento e prevenção</a>
-              <a href="#">hidratação</a>
-              <a href="#">proteção</a>
-              <a href="#">corpo</a>
-              <a href="#">linha antiacne</a>
-              <a href="#">compra recorrente</a>
+              <div class="dropdown-container">
+                <div class="dropdown-category">
+                  <p class="dropdown-category-title">por etapas</p>
+                  <ul>
+                    <li><a href="#">limpeza</a></li>
+                    <li><a href="#">tratamento e prevenção</a></li>
+                    <li><a href="#">hidratação</a></li>
+                    <li><a href="#">proteção solar</a></li>
+                    <li><a href="#">corpo</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-category">
+                  <p class="dropdown-category-title">por preocupação</p>
+                  <ul>
+                    <li><a href="#">acne e cravos</a></li>
+                    <li><a href="#">oleosidade</a></li>
+                    <li><a href="#">olheiras</a></li>
+                    <li><a href="#">manchas e cicatrizes</a></li>
+                    <li><a href="#">linhas finas</a></li>
+                    <li><a href="#">recessamento</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown-category">
+                  <p class="dropdown-category-title">por ingredientes</p>
+                  <ul>
+                    <li><a href="#">vitamina c</a></li>
+                    <li><a href="#">ácido hialurônico</a></li>
+                    <li><a href="#">retinol</a></li>
+                  </ul>
+                </div>
+              </div>
+              <a class="dropdown-link" href="https://www.sallve.com.br/collections/loja">ver todos os produtos<ion-icon name="arrow-forward-outline"></ion-icon></a>
+              
             </div>
           </div>
 
-          <div>
-            <a href="#">kits</a>
-          </div>
+        
+            <a href="https://www.sallve.com.br/collections/kits">kits</a>
+          
+        </div>
+        
+        <div class="nav-main-logo"><a href="https://www.sallve.com.br/">
+
+          <img
+          src="img\marca_sallve-2_a948a523-fda3-4a3c-a3f6-9faf1bc01317.gif"
+          alt=""
+          />
+        </a>
         </div>
 
         <div class="nav-main-right">
           <div>
-            <a href="#">blog</a>
-            <a href="#">indique e ganhe</a>
+            <a href="https://www.sallve.com.br/blogs/sallve">blog</a>
+            <a href="https://www.sallve.com.br/pages/quiz">quiz</a>
           </div>
           <div>
             <a href="#"
@@ -109,72 +126,10 @@
     </header>
 
     <section id="slidershow" class="section-slidershow">
-      <div class="slides">
-
-        <div class="side-btns">
-          <div id="left-btn" class="side-btn side-btn-left"><ion-icon name="chevron-back-outline"></ion-icon></div>
-          <div id="right-btn" class="side-btn side-btn-right"><ion-icon name="chevron-forward-outline"></ion-icon></div>
-        </div>
-
-        <!-- slide1 -->
-        <div>
-          <a href="https://www.sallve.com.br/collections/linha-antioxidante">
-          <div class="slide slide1">
-            <div>
-              <p class="slidershow-tag">família antioxidante</p>
-              <p class="slidershow-p white-font">
-                prevenção do envelhecimento <br />
-                precoce e pele mais firme <br />
-                da cabeça aos pés
-              </p>
-            </div>
-            <button class="slider-btn dark-bg">comprar agora</button>
-            </button>
-          </div>
-        </a>
-        </div>
-
-        <!-- <div>
-          <a href="https://www.sallve.com.br/products/oleo-facial-antioxidante">
-          <div class="slide slide2">
-            <div>
-              <p class="slidershow-tag">óleo facial antioxidante</p>
-              <p class="slidershow-p dark-font">
-                Astaxantina e Vitamina C <br />
-                no seu tratamento de linhas finas
-              </p>
-            </div>
-            <button class="slider-btn dark-bg">comprar agora</button>
-            </button>
-          </div>
-        </a>
-        </div>
-
-        <div>
-          <a href="https://www.sallve.com.br/products/oleo-corporal-antioxidante">
-          <div class="slide slide3">
-            <div>
-              <p class="slidershow-tag">óleo corporal antioxidante</p>
-              <p class="slidershow-p dark-font">
-                um poderoso banho <br>
-                pra hidratar e melhorar <br>
-                a firmeza da pele
-              </p>
-            </div>
-            <button class="slider-btn white-bg">comprar agora</button>
-            </button>
-          </div>
-        </a>
-        </div> -->
-
-      </div>
-      <div class="dots-slider">
-        <ul>
-          <li class="dot-slider"></li>
-          <li class="dot-slider"></li>
-          <li class="dot-slider"></li>
-        </ul>
-      </div>
+      <a class="slidelink" href="https://www.sallve.com.br/collections/loja">
+        <img class="slidelink-desktop" src="/img/20220714_familiaahfrete48_desk.webp" alt="">
+        <img class="slidelink-mobile" src="/img/20220714_familiaahfrete48.webp" alt="">
+      </a>
     </section>
 
     <section class="section-banners">
@@ -185,9 +140,6 @@
       <div class="banner">
         <img src="img\banner2.progressive.png.webp" alt="">
         <a href="https://www.sallve.com.br/products/limpador-facial">comprar agora</a>
-      </div>
-      <div class="banner-wide">
-        <a href=""><img src="img\banner3.progressive.png.webp" alt=""></a>
       </div>
     </section>
 
@@ -709,11 +661,11 @@
         </div>
       </div>
     </footer>
-
-
-
-
-
     </div>
+
+    <script src="app.js"></script>
+
   </body>
+
+
 </html>

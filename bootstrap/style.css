@@ -1,0 +1,260 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #999;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+/* FIXED CONTAINER */
+
+/* FIXED CONTAINER LIME */
+
+.container-fixed-lime {
+  width: 100%;
+  background-color: #d8ff6e;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.container-fixed-lime a:link,
+.container-fixed-lime a:visited {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+}
+
+.container-fixed-lime-numbers {
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.lime-numbers-item {
+  color: #fff;
+  background-color: #333;
+  padding: 0.08rem 0.55rem;
+  border-radius: 5px;
+}
+
+.colon {
+  font-size: 12;
+  margin: 0px 2px;
+}
+
+/* FIXED CONTAINER WHITE */
+
+/* containers */
+.container-fixed-white {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 2fr 0.8fr 2fr;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 7px;
+}
+
+.container-fixed-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-row: 1 / 2;
+}
+
+.container-fixed-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-fixed-white a:link {
+  color: #000;
+  margin: 0px 10px;
+  transition: color 0.5s;
+}
+
+.container-fixed-white a:hover {
+  color: #8a5eff;
+}
+
+.logo-img img {
+  max-width: 126px;
+}
+
+.logo-img {
+  text-align: center;
+  grid-column: 2 / 3;
+}
+/* dropdown */
+
+.dropdown-menu {
+  border-radius: 0;
+  line-height: 2.5;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+.dropdown-item a,
+.dropdown-item li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.dropdown-item.li-inverno {
+  line-height: 1.2;
+}
+
+.dropdown-menu a:hover {
+  background-color: transparent;
+}
+
+/* navicon */
+.nav-icon {
+  stroke: #000;
+  width: 40px;
+  stroke-width: 1.4;
+  display: inline;
+}
+
+.nav-icon-sm {
+  stroke: #000;
+  width: 14px;
+  stroke-width: 2;
+  display: inline;
+}
+
+.nav-icon-sm:hover {
+  stroke: #8a5eff;
+}
+
+/* INPUT */
+
+.input-buscar {
+}
+
+input,
+input:focus {
+  margin: 14px 0 0 0;
+  border-style: none;
+  outline: none;
+  height: 50%;
+}
+
+input::placeholder {
+  color: #000;
+  font-weight: 600;
+}
+
+input:focus::-webkit-input-placeholder,
+input:focus::-moz-placeholder,
+input:focus:-ms-input-placeholder,
+input:focus:-moz-placeholder {
+  opacity: 0;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* CONTAINER CAROUSEL */
+.container-slider {
+  margin-top: 144px;
+  position: relative;
+}
+.carousel-item {
+  width: 100%;
+  height: 100vh;
+  background-color: #e1e3e5;
+}
+
+.carousel-indicators button {
+  background-color: #8a5eff !important;
+  width: 11px !important;
+  height: 11px !important;
+  border-radius: 100%;
+  position: relative;
+  bottom: -50px;
+  margin-right: 50%;
+}
+
+/* .carousel-control-prev,
+.carousel-control-next {
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+
+.carousel-img {
+  width: 50%;
+  text-align: right;
+}
+
+.carousel-button1 {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: #333;
+}
+
+.carousel-button1:hover {
+  background-color: #f1eaf5 !important;
+}
+
+.carousel-item p {
+  background-color: #d27cd3;
+  font-size: 15px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  padding: 0px 10px;
+  display: inline;
+}
+
+.carrousel-item h1 {
+  color: #333;
+  line-height: 130%;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 35px;
+}

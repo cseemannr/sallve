@@ -39,6 +39,11 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .header {
   width: 100%;
   position: fixed;

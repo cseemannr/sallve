@@ -17,7 +17,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaquery.css">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,23 +29,27 @@
     <header class="header">
       <div class="container nav-lime">
         <a id="header-nav-lime" href="#">frete grátis acima de R$109 😎</a>
-        <div class="nav-lime-counter">
+        <!-- <div class="nav-lime-counter">
           <span class="nav-lime-number">37</span
           ><span class="nav-lime-colon">:</span
           ><span class="nav-lime-number">58</span
           ><span class="nav-lime-colon">:</span
           ><span class="nav-lime-number">00</span>
-        </div>
+        </div> -->
       </div>
 
       <div class="nav-main">
 
         <div class="nav-main-left">
+          <div class="mobile-btn">
+            <ion-icon class="mobile-btn-open" name="reorder-three-outline" size="large"></ion-icon>
+            <!-- <ion-icon class="mobile-btn-close" name="close-outline" size="large"></ion-icon> -->
+          </div>
           <div class="nav-main-search-box">
             <a href="https://www.sallve.com.br/search?q="
               ><ion-icon
                 class="nav-icon nav-icon-search"
-                name="search-outline"
+                name="search-outline" size="large"
               ></ion-icon
             ></a>
             <input class="nav-search" type="search" placeholder="buscar" />
@@ -95,34 +100,34 @@
           </div>
 
         
-            <a href="https://www.sallve.com.br/collections/kits">kits</a>
+          <a class="nav-main-kits" href="https://www.sallve.com.br/collections/kits">kits</a>
           
         </div>
         
-        <div class="nav-main-logo"><a href="https://www.sallve.com.br/">
-
+        <div class="nav-main-logo">
+          <a href="https://www.sallve.com.br/">
           <img
           src="img\marca_sallve-2_a948a523-fda3-4a3c-a3f6-9faf1bc01317.gif"
-          alt=""
-          />
-        </a>
+          alt=""/></a>
         </div>
 
         <div class="nav-main-right">
-          <div>
+          <div class="nav-main-blog-quiz">
             <a href="https://www.sallve.com.br/blogs/sallve">blog</a>
             <a href="https://www.sallve.com.br/pages/quiz">quiz</a>
           </div>
-          <div>
+          <div class="nav-main-user-bag">
             <a href="#"
-              ><ion-icon class="nav-icon" name="person-outline"></ion-icon
+              ><ion-icon class="nav-icon" name="person-outline" size="large"></ion-icon
             ></a>
-            <a href="#"
-              ><ion-icon class="nav-icon" name="bag-outline"></ion-icon
+            <a class="nav-icon-bag" href="#"
+              ><ion-icon class="nav-icon" name="bag-outline" size="large"></ion-icon
             ></a>
           </div>
         </div>
       </div>
+
+      <div class="mobile-nav"></div>
     </header>
 
     <section id="slidershow" class="section-slidershow">
@@ -135,11 +140,11 @@
     <section class="section-banners">
       <div class="banner">
         <img src="img\banner1.progressive.png.webp" alt="">
-        <a href="https://www.sallve.com.br/collections/vem-inverno">comprar agora</a>
+        <a href="https://www.sallve.com.br/products/vitamina-c-antioxidante-hidratante">comprar agora</a>
       </div>
       <div class="banner">
         <img src="img\banner2.progressive.png.webp" alt="">
-        <a href="https://www.sallve.com.br/products/limpador-facial">comprar agora</a>
+        <a href="https://www.sallve.com.br/products/hidratante-facial">comprar agora</a>
       </div>
     </section>
 
@@ -181,63 +186,63 @@
         </div>
 
         <div class="product">
-          <a href="https://www.sallve.com.br/products/vitamina-c-antioxidante-hidratante">
+          <a href="https://www.sallve.com.br/collections/home/products/protetor-solar-fps60">
             <img class="product-img product-img-a" src="img\grid2a.webp" alt="">
             <img class="product-img product-img-b" src="img\grid2b.webp" alt=""></a>
           <div class="product-rating">
-            <ion-icon name="star"></ion-icon><p>4.3</p>
+            <ion-icon name="star"></ion-icon><p>4.4</p>
           </div>
-          <div class="free-delivery">
+          <div class="free-delivery hidden">
             <p>frete grátis</p>
           </div>
-          <div class="recorrencia">
+          <div class="recorrencia hidden">
             <p>recorrência <i class="fa-solid fa-check"></i></p>
           </div>
 
           <div class="product-text">
-            <a class="product-tittle" href="https://www.sallve.com.br/collections/home/products/vitamina-c-antioxidante-hidratante">
-              kit basicão antiacne</a>
-              <p class="product-subtittle">jornada diurna para pele acneica</p>
-              <p class="product-price"><span class="full-price">R$ 174,70</span><span class="tag-price">- R$ 20</span></p>
+            <a class="product-tittle" href="https://www.sallve.com.br/collections/home/products/protetor-solar-fps60">
+              protetor solar fps 60</a>
+              <p class="product-subtittle">multiproteção diária, invisível na pele</p>
+              <p class="product-price"><span class="full-price">R$ 64,90</span><span class="tag-price">- R$ 10</span></p>
 
-              <p class="product-price"><span class="product-big-price">R$ 154,70</span> ou 6x R$ 25,78</p>
+              <p class="product-price"><span class="product-big-price">R$ 54,90</span> ou 2x R$ 27,458</p>
               <div class="products-btn">
-                <a class="big-btn" href="https://www.sallve.com.br/collections/home/products/vitamina-c-antioxidante-hidratante">quero conhecer</a>
+                <a class="big-btn" href="https://www.sallve.com.br/collections/home/products/protetor-solar-fps60">quero conhecer</a>
                 <a class="bag-btn" href="" ><ion-icon class="btn-icon plus-btn-icon" name="add-outline"></ion-icon><ion-icon class="btn-icon bag-btn-icon" name="bag-outline"></ion-icon></a>
               </div>
             </div>
         </div>
 
         <div class="product">
-          <a href="https://www.sallve.com.br/products/vitamina-c-antioxidante-hidratante">
+          <a href="https://www.sallve.com.br/products/hidratante-facial">
             <img class="product-img product-img-a" src="img\grid3a.webp" alt="">
             <img class="product-img product-img-b" src="img\grid3b.webp" alt=""></a>
           <div class="product-rating">
-            <ion-icon name="star"></ion-icon><p>4.7</p>
+            <ion-icon name="star"></ion-icon><p>4.5</p>
           </div>
-          <div class="free-delivery">
+          <div class="free-delivery hidden">
             <p>frete grátis</p>
           </div>
-          <div class="recorrencia">
+          <div class="recorrencia hidden">
             <p>recorrência <i class="fa-solid fa-check"></i></p>
           </div>
 
           <div class="product-text">
-            <a class="product-tittle" href="https://www.sallve.com.br/collections/home/products/vitamina-c-antioxidante-hidratante">
-              kit basicão antiacne</a>
-              <p class="product-subtittle">jornada diurna para pele acneica</p>
-              <p class="product-price"><span class="full-price">R$ 174,70</span><span class="tag-price">- R$ 20</span></p>
+            <a class="product-tittle" href="https://www.sallve.com.br/products/hidratante-facial">
+              hidratante facial</a>
+              <p class="product-subtittle">gel-creme de hidratação diária e prolongada</p>
+              <p class="product-price"><span class="full-price">R$ 69,90</span><span class="tag-price">- R$ 30</span></p>
 
-              <p class="product-price"><span class="product-big-price">R$ 154,70</span> ou 6x R$ 25,78</p>
+              <p class="product-price"><span class="product-big-price">R$ 39,90</span></p>
               <div class="products-btn">
-                <a class="big-btn" href="https://www.sallve.com.br/collections/home/products/vitamina-c-antioxidante-hidratante">quero conhecer</a>
+                <a class="big-btn" href="https://www.sallve.com.br/products/hidratante-facial">quero conhecer</a>
                 <a class="bag-btn" href="" ><ion-icon class="btn-icon plus-btn-icon" name="add-outline"></ion-icon><ion-icon class="btn-icon bag-btn-icon" name="bag-outline"></ion-icon></a>
               </div>
             </div>
         </div>
 
         <div class="product">
-          <a href="https://www.sallve.com.br/products/vitamina-c-antioxidante-hidratante">
+          <a href="https://www.sallve.com.br/products/kit-basicao">
             <img class="product-img product-img-a" src="img\grid4a.webp" alt="">
             <img class="product-img product-img-b" src="img\grid4b.webp" alt=""></a>
           <div class="free-delivery hidden">
@@ -248,21 +253,21 @@
           </div>
 
           <div class="product-text">
-            <a class="product-tittle" href="https://www.sallve.com.br/collections/home/products/vitamina-c-antioxidante-hidratante">
-              kit basicão antiacne</a>
-              <p class="product-subtittle">jornada diurna para pele acneica</p>
-              <p class="product-price"><span class="full-price">R$ 174,70</span><span class="tag-price">- R$ 20</span></p>
+            <a class="product-tittle" href="https://www.sallve.com.br/products/kit-basicao">
+              kit basicão</a>
+              <p class="product-subtittle">limpa, hidrata e protege</p>
+              <p class="product-price"><span class="full-price">R$ 219,70</span><span class="tag-price">- R$ 60</span></p>
 
-              <p class="product-price"><span class="product-big-price">R$ 154,70</span> ou 6x R$ 25,78</p>
+              <p class="product-price"><span class="product-big-price">R$ 159,90</span> ou 6x R$ 26,65</p>
               <div class="products-btn">
-                <a class="big-btn" href="https://www.sallve.com.br/collections/home/products/vitamina-c-antioxidante-hidratante">quero conhecer</a>
+                <a class="big-btn" href="https://www.sallve.com.br/products/kit-basicao">quero conhecer</a>
                 <a class="bag-btn" href="" ><ion-icon class="btn-icon plus-btn-icon" name="add-outline"></ion-icon><ion-icon class="btn-icon bag-btn-icon" name="bag-outline"></ion-icon></a>
               </div>
             </div>
         </div>
 
         <div class="product">
-          <a href="https://www.sallve.com.br/products/vitamina-c-antioxidante-hidratante">
+          <a href="https://www.sallve.com.br/products/kit-basicao-antiacne">
             <img class="product-img product-img-a" src="img\grid5a.webp" alt="">
             <img class="product-img product-img-b" src="img\grid5b.webp" alt=""></a>
           <div class="free-delivery hidden">
@@ -273,21 +278,23 @@
           </div>
 
           <div class="product-text">
-            <a class="product-tittle" href="https://www.sallve.com.br/collections/home/products/vitamina-c-antioxidante-hidratante">
+            <a class="product-tittle" href="https://www.sallve.com.br/products/kit-basicao-antiacne">
               kit basicão antiacne</a>
               <p class="product-subtittle">jornada diurna para pele acneica</p>
-              <p class="product-price"><span class="full-price">R$ 174,70</span><span class="tag-price">- R$ 20</span></p>
+              <p class="product-price"><span class="full-price">R$ 179,70
+              </span><span class="tag-price">- R$ 30</span></p>
 
-              <p class="product-price"><span class="product-big-price">R$ 154,70</span> ou 6x R$ 25,78</p>
+              <p class="product-price"><span class="product-big-price">R$ 149,70</span> ou 5x R$ 29,94
+              </p>
               <div class="products-btn">
-                <a class="big-btn" href="https://www.sallve.com.br/collections/home/products/vitamina-c-antioxidante-hidratante">quero conhecer</a>
+                <a class="big-btn" href="https://www.sallve.com.br/products/kit-basicao-antiacne">quero conhecer</a>
                 <a class="bag-btn" href="" ><ion-icon class="btn-icon plus-btn-icon" name="add-outline"></ion-icon><ion-icon class="btn-icon bag-btn-icon" name="bag-outline"></ion-icon></a>
               </div>
             </div>
         </div>
 
         <div class="product">
-          <a href="https://www.sallve.com.br/products/vitamina-c-antioxidante-hidratante">
+          <a href="https://www.sallve.com.br/products/protetor-solar-corporal-fps50">
             <img class="product-img product-img-a" src="img\grid6a.webp" alt="">
             <img class="product-img product-img-b" src="img\grid6b.webp" alt=""></a>
           <div class="product-rating hidden">
@@ -301,12 +308,12 @@
           </div>
 
           <div class="product-text">
-            <a class="product-tittle" href="https://www.sallve.com.br/collections/home/products/vitamina-c-antioxidante-hidratante">
-              sérum antiacne</a>
-              <p class="product-subtittle">ação e prevenção em uma só fórmula</p>
-              <p class="product-price"><span class="product-big-price">R$ 59,90</span> ou 2x R$ 29,95</p>
+            <a class="product-tittle" href="https://www.sallve.com.br/products/protetor-solar-corporal-fps50">
+              protetor solar corporal fps 50</a>
+              <p class="product-subtittle">alta proteção e pele luminosa sem grude nem pele cinzenta</p>
+              <p class="product-price"><span class="product-big-price">R$ 64,90</span> ou 2x R$ 32,45</p>
               <div class="products-btn">
-                <a class="big-btn" href="https://www.sallve.com.br/collections/home/products/vitamina-c-antioxidante-hidratante">quero conhecer</a>
+                <a class="big-btn" href="https://www.sallve.com.br/products/protetor-solar-corporal-fps50">quero conhecer</a>
                 <a class="bag-btn" href="" ><ion-icon class="btn-icon plus-btn-icon" name="add-outline"></ion-icon><ion-icon class="btn-icon bag-btn-icon" name="bag-outline"></ion-icon></a>
               </div>
             </div>
@@ -351,13 +358,24 @@
           <div class="treatment-tittle"><p>oleosidade</p></div>
         </div>
 
+        <div class="treatment">
+          <img src="img/porosdilatados-otimizada.avif" alt="">
+          <div class="treatment-tittle"><p>poros dilatados</p></div>
+        </div>
+
+        <div class="treatment">
+          <img src="img/firmezadapele-otimizada.webp" alt="">
+          <div class="treatment-tittle"><p>firmeza</p></div>
+        </div>
+
         
       </div>
 
     </section>
 
     <section class="section-quiz">
-      <img src="img\quiz-banner-desk.progressive.png.webp" alt="">
+      <img class="quiz-desktop" src="img/quiz-banner-desk.progressive.png.webp" alt="">
+      <img class="quiz-mobile"src="img/quiz-banner-desk.progressive.mobile.png.webp" alt="">
     </section>
 
     <section class="section-ouvir">
@@ -406,38 +424,49 @@
     <p class="blog-heading">blog</p>
     <div class="blog-grid">
 
-      <div class="blog-row"><a href="https://www.sallve.com.br/blogs/sallve/astaxantina">
+      <div class="blog-img"><a href="https://www.sallve.com.br/blogs/sallve/particulas-de-milho">
         <img src="img\74049dfe-astaxantina_710x710_crop_center.progressive.webp" alt="">
-        <p class="blog-img-text"><span class="blog-img-bg">Astaxantina: o que é e quais os benefícios para a pele?</span></p>
+        <p class="blog-img-text"><span class="blog-img-bg">Partículas de milho: esfoliação física gentil para a pele</span></p>
       </a></div>
 
-      <div class="blog-row"><a href="https://www.sallve.com.br/blogs/sallve/oleo-antioxidante-facial-dia-e-noite">
+      <div class="blog-img"><a href="https://www.sallve.com.br/blogs/sallve/skin-cycling">
         <img src="img\93733979-sallve_oleo_facial_antiox_0509_710x710_crop_center.progressive.webp" alt="">
-        <p class="blog-img-text"><span class="blog-img-bg">Óleo Antioxidante Facial: qual a diferença entre usar de dia ou de noite?</span></p>
+        <p class="blog-img-text"><span class="blog-img-bg">Skin cycling: O que é, quais os benefícios e como fazer</span></p>
       </a></div>
 
     </section>
 
-    <section class="section-quote">
-      <div class="quote">
+    <section class="section-testimonials">
+      <div class="testimonials-container">
         <i class="fa-solid fa-quote-left"></i><i class="fa-solid fa-quote-right"></i>
-        <blockquote class="blockquote marie-claire-txt">Uma marca de cosméticos nativa digital brasileira que chega com o objetivo de criar produtos de alta qualidade, com fórmulas seguras, preços justos e co-criadas com os consumidores.</blockquote>
-        <!-- <blockquote class="blockquote dia-de-beaute-txt">Um dos diferenciais da Sallve será ter uma escuta ativa da comunidade consumidora para que seus produtos sejam sempre resultado de necessidades e vontades reais da audiência.</blockquote>
-        <blockquote class="blockquote stl-txt">Se não bastasse ter um time de experts desse, a Sallve tem outro "participante" fundamental em todo o seu processo: o público.</blockquote>
-        -->
+
+        <div class="testimonials">
+        <div class="testimonial active">
+          <p>Uma marca de cosméticos nativa digital brasileira que chega com o objetivo de criar produtos de alta qualidade, com fórmulas seguras, preços justos e co-criadas com os consumidores.</p>
+        </div>
+
+          <div class="testimonial">
+            <p>Um dos diferenciais da Sallve será ter uma escuta ativa da comunidade consumidora para que seus produtos sejam sempre resultado de necessidades e vontades reais da audiência.</p>
+            </div>
+
+        <div class="testimonial">
+          <p>Se não bastasse ter um time de experts desse, a Sallve tem outro "participante" fundamental em todo o seu processo: o público.</p>
+        </div>
+      </div>
+
       </div>
 
       <div class="brands">
-        <div class="marie-claire">
-          <img src="img\marie-claire_4d41e444-b6e3-492e-82a1-fe2865d07f58.webp" alt="">
+        <div class="brand-testimonial marie-claire active">
+          <img data-id="0" src="img\marie-claire_4d41e444-b6e3-492e-82a1-fe2865d07f58.webp" alt="">
         </div>
-        <div class="dia-de-beaute">
-          <img src="img\dia-de-beaute_b0f518eb-d989-4db8-81ca-fa88b105f78e.webp" alt="">
+        <div class="brand-testimonial dia-de-beaute">
+          <img data-id="1" src="img\dia-de-beaute_b0f518eb-d989-4db8-81ca-fa88b105f78e.webp" alt="">
         </div>
-        <div class="stl" >
-          <img src="img\steal-the-look_c76306c6-af20-491a-8ac5-35525da682f2.webp" alt="">
+        <div class="brand-testimonial stl" >
+          <img data-id="2" src="img\steal-the-look_c76306c6-af20-491a-8ac5-35525da682f2.webp" alt="">
         </div>
-        </div>      
+      </div>      
     </section>
 
     <section class="section-ig">
@@ -661,7 +690,7 @@
       <div class="footer-bottom">
         <div class="footer-bottom-grid">
           <p>2022 Sallve. Todos os direitos reservados.</p>
-          <p>Rua Cônego Eugênio Leite, 767 - São Paulo/SP - CEP: 05414-012. CNPJ: 32.124.385/0001-95</p>
+          <p>Rua Cônego Eugênio Leite, 767 - São Paulo/SP - CEP: 05414-012. <br>CNPJ: 32.124.385/0001-95</p>
           <div>
             <a href="https://www.sallve.com.br/pages/privacidade">Política de privacidade</a>
             <a href="https://www.sallve.com.br/pages/termos">Termos de uso</a>

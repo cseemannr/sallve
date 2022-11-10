@@ -1,0 +1,250 @@
+@media (max-width: 1020px) {
+  .nav-main {
+    padding: 0 8px;
+    height: 60px;
+  }
+
+  .nav-main img {
+    max-width: 100px;
+  }
+
+  .nav-main a:link,
+  .nav-main a:visited {
+    margin: 0 4px;
+  }
+
+  .mobile-btn-open {
+    display: block;
+    margin-right: 4px;
+  }
+
+  input[type="search"],
+  .dropdown,
+  .nav-main-kits,
+  .nav-main-blog-quiz {
+    display: none;
+  }
+
+  .nav-main-right {
+    justify-self: right;
+  }
+
+  .section-slidershow {
+    margin-top: 91px;
+  }
+
+  .section-banners {
+    margin: 62px 0px 0px;
+    column-gap: 24px;
+    align-items: baseline;
+  }
+
+  .formula {
+    margin: 40px 0;
+  }
+
+  .formula-heading {
+    font-size: 30px;
+  }
+
+  .products-grid {
+    margin: 0 16px;
+    grid-gap: 40px 12px;
+  }
+
+  .section-quiz {
+    margin: 94px 0px;
+  }
+
+  .section-ouvir {
+    margin: 80px 65px 105px;
+  }
+
+  .section-ouvir-grid {
+    column-gap: 64px;
+    row-gap: 140px;
+  }
+
+  .ouvir-tittle {
+    font-size: 30px;
+  }
+
+  .blog-heading {
+    margin-bottom: 52px;
+  }
+
+  .section-testimonials {
+    margin-bottom: 95px;
+  }
+}
+
+@media (max-width: 990px) {
+  .banner a:link,
+  .banner a:active,
+  .banner a:visited {
+    padding: 10px 65px;
+    bottom: 40px;
+  }
+
+  .product-tittle:link,
+  .product-tittle:active,
+  .product-tittle:visited {
+    font-size: 15px;
+  }
+
+  .product-subtittle {
+    font-size: 13px;
+    padding-left: 0px;
+  }
+
+  .product-tittle:link,
+  .product-tittle:active,
+  .product-tittle:visited {
+    padding-left: 0px;
+  }
+
+  .bag-btn {
+    padding: 0 8px;
+  }
+
+  .product-price {
+    margin: 10px 0 0 0px;
+  }
+
+  .recorrencia {
+    display: none;
+  }
+
+  .big-btn,
+  .big-btn:link,
+  .big-btn:active {
+    font-size: 15px;
+  }
+
+  .section-ouvir {
+    margin: 80px clamp(50px, 5vw, 160px) 105px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .treatments-heading {
+    font-size: 24px;
+    padding: 0px;
+    margin: 60px 60px 40px;
+  }
+
+  .treatments-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .treatment-tittle {
+    font-size: 15px;
+    left: 15%;
+  }
+
+  .section-ouvir {
+    margin: 80px 30px 105px;
+  }
+
+  .blog-img-text,
+  .blog-img-text:link,
+  .blog-img-text:active {
+    font-size: 24px;
+  }
+
+  .ig-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .ig-container:nth-child(5) {
+    display: none;
+  }
+
+  .footer-bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .slidelink-desktop {
+    display: none;
+  }
+
+  .slidelink-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .section-banners {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .formula-heading {
+    font-size: 24px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    margin: 0 8px;
+  }
+
+  .product-tittle:link,
+  .product-tittle:active,
+  .product-tittle:visited {
+    font-size: 20px;
+    padding-left: 8px;
+  }
+
+  .product-subtittle {
+    font-size: 15px;
+    padding-left: 8px;
+  }
+  .product-price {
+    margin: 10px 0 0 8px;
+  }
+  .treatment-tittle {
+    left: 16px;
+  }
+  .quiz-desktop {
+    display: none;
+  }
+  .quiz-mobile {
+    display: block;
+  }
+
+  .section-ouvir-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .blog-grid {
+    grid-template-columns: auto;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .testimonials-container {
+    font-size: 16px;
+  }
+
+  .ig-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ig-container:nth-child(4) {
+    display: none;
+  }
+
+  .form-input-btn input,
+  .form-input-btn input:focus {
+    margin-right: 10px;
+  }
+}

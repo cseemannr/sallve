@@ -23,11 +23,11 @@ changeText();
 setInterval(changeText, 5000);
 
 //user dropdown
-userDropdown.addEventListener("click", (event) => {
+userDropdown.addEventListener("click", () => {
   userDropdownContent.classList.toggle("active");
 });
 
-userDropdown.addEventListener("blur", (event) => {
+userDropdown.addEventListener("blur", () => {
   userDropdownContent.classList.remove("active");
 });
 

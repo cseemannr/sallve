@@ -6,6 +6,9 @@ const headerLimeArray = [
 const testimonials = document.querySelector(".testimonials").children;
 const brandTestimonials = document.querySelector(".brands").children;
 
+const userDropdown = document.querySelector(".nav-main-user");
+const userDropdownContent = document.querySelector(".nav-main-user-dropdown");
+
 //change lime nav text
 let i = 0;
 function changeText() {
@@ -19,10 +22,16 @@ function changeText() {
 changeText();
 setInterval(changeText, 5000);
 
-//testimonials
-console.log(testimonials);
-console.log(brandTestimonials);
+//user dropdown
+userDropdown.addEventListener("click", (event) => {
+  userDropdownContent.classList.toggle("active");
+});
 
+userDropdown.addEventListener("blur", (event) => {
+  userDropdownContent.classList.remove("active");
+});
+
+//testimonials
 for (let i = 0; i < brandTestimonials.length; i++) {
   brandTestimonials[i].addEventListener("click", function () {
     for (let j = 0; j < brandTestimonials.length; j++) {

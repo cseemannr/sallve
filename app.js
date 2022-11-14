@@ -9,6 +9,10 @@ const brandTestimonials = document.querySelector(".brands").children;
 const userDropdown = document.querySelector(".nav-main-user");
 const userDropdownContent = document.querySelector(".nav-main-user-dropdown");
 
+const bagDropDown = document.querySelector(".nav-main-bag");
+const bagDropDownContent = document.querySelector(".nav-main-bag-dropdown");
+const bagDropDownClose = document.querySelector(".bag-dropdown-close");
+
 //change lime nav text
 let i = 0;
 function changeText() {
@@ -29,6 +33,15 @@ userDropdown.addEventListener("click", () => {
 
 userDropdown.addEventListener("blur", () => {
   userDropdownContent.classList.remove("active");
+});
+
+//bag dropdown
+bagDropDown.addEventListener("click", () => {
+  bagDropDownContent.classList.add("active");
+});
+
+bagDropDownClose.addEventListener("click", () => {
+  bagDropDownContent.classList.remove("active");
 });
 
 //testimonials

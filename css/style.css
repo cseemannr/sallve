@@ -29,7 +29,7 @@ img {
 ion-icon {
   --ionicon-stroke-width: 40px;
   vertical-align: middle;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 /* clears the ‘X’ from Internet Explorer */
@@ -475,6 +475,10 @@ input[type="search"] {
 .bag-dropdown-product-details-subtittle {
   font-size: 13px;
   margin: 8px 0;
+}
+
+.bag-icon {
+  pointer-events: none;
 }
 
 .fixed {

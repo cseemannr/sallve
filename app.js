@@ -10,8 +10,12 @@ const userDropdown = document.querySelector(".nav-main-user");
 const userDropdownContent = document.querySelector(".nav-main-user-dropdown");
 
 const bagDropDown = document.querySelector(".nav-main-bag");
-const bagDropDownContent = document.querySelector(".nav-main-bag-dropdown");
+const bagDropDownContent = document.querySelector(
+  ".nav-main-bag-dropdown-content"
+);
 const bagDropDownClose = document.querySelector(".bag-dropdown-close");
+const bodyBg = document.querySelector(".nav-main-bag-dropdown-bg");
+const body = document.querySelector("body");
 
 //change lime nav text
 let i = 0;
@@ -37,11 +41,15 @@ userDropdown.addEventListener("blur", () => {
 
 //bag dropdown
 bagDropDown.addEventListener("click", () => {
-  bagDropDownContent.classList.add("active");
+  bagDropDownContent.classList.add("bag-active");
+  body.classList.add("fixed");
+  bodyBg.classList.toggle("active");
 });
 
 bagDropDownClose.addEventListener("click", () => {
-  bagDropDownContent.classList.remove("active");
+  bagDropDownContent.classList.remove("bag-active");
+  body.classList.remove("fixed");
+  bodyBg.classList.toggle("active");
 });
 
 //testimonials

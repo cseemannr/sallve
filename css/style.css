@@ -550,7 +550,7 @@ input[type="search"] {
   font-weight: 600;
   background: rgba(255, 255, 255, 0.4);
   position: absolute;
-  bottom: 41%;
+  bottom: clamp(41%, 20vh, 60%);
   z-index: 99;
   padding: 4px 8px;
   align-items: center;

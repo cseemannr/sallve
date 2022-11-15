@@ -18,6 +18,11 @@
     margin-right: 4px;
   }
 
+  .nav-main-user-dropdown {
+    top: 80px;
+    right: 56px;
+  }
+
   input[type="search"],
   .dropdown,
   .nav-main-kits,
@@ -27,6 +32,10 @@
 
   .nav-main-right {
     justify-self: right;
+  }
+
+  .mobile-nav-content {
+    height: min(84vh, 100vh);
   }
 
   .section-slidershow {

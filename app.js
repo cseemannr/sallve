@@ -5,10 +5,8 @@ const headerLimeArray = [
 ];
 const testimonials = document.querySelector(".testimonials").children;
 const brandTestimonials = document.querySelector(".brands").children;
-
 const userDropdown = document.querySelector(".nav-main-user");
 const userDropdownContent = document.querySelector(".nav-main-user-dropdown");
-
 const bagDropDown = document.querySelector(".nav-main-bag");
 const bagDropDownContent = document.querySelector(
   ".nav-main-bag-dropdown-content"
@@ -16,10 +14,18 @@ const bagDropDownContent = document.querySelector(
 const bagDropDownClose = document.querySelector(".bag-dropdown-close");
 const bodyBg = document.querySelector(".nav-main-bag-dropdown-bg");
 const body = document.querySelector("body");
-
 const mobileBtnOpen = document.querySelector(".mobile-btn-open");
 const mobileBtnClose = document.querySelector(".mobile-btn-close");
 const mobileNav = document.querySelector(".mobile-nav");
+const mobileDropdownTabs = document.querySelectorAll(
+  ".mobile-nav-dropdown-tab"
+);
+const mobileDropdownTabContents = document.querySelectorAll(
+  ".mobile-nav-dropdown-tab-inner-ul"
+);
+const mobileDropdownTabIcons = document.querySelectorAll(
+  ".mobile-nav-dropdown-tab-icon"
+);
 
 //change lime nav text
 let i = 0;
@@ -43,18 +49,38 @@ userDropdown.addEventListener("blur", () => {
   userDropdownContent.classList.remove("active");
 });
 
+// window.onclick = function (e) {
+//   if (
+//     !e.target.matches(".nav-main-user") &&
+//     userDropdownContent.classList.contains("active")
+//   ) {
+//     userDropdownContent.classList.remove("active");
+//   }
+// };
+
 //bag dropdown
 bagDropDown.addEventListener("click", () => {
-  bagDropDownContent.classList.add("bag-active");
+  bagDropDownContent.classList.add("active");
   body.classList.toggle("fixed");
   bodyBg.classList.toggle("active");
 });
 
 bagDropDownClose.addEventListener("click", () => {
-  bagDropDownContent.classList.remove("bag-active");
+  bagDropDownContent.classList.remove("active");
   body.classList.toggle("fixed");
   bodyBg.classList.toggle("active");
 });
+
+// window.onclick = function (e) {
+//   if (
+//     !e.target.matches(".nav-main-bag") &&
+//     bagDropDownContent.classList.contains("active")
+//   ) {
+//     bagDropDownContent.classList.remove("active");
+//     body.classList.toggle("fixed");
+//     bodyBg.classList.toggle("active");
+//   }
+// };
 
 //mobile nav
 mobileBtnOpen.addEventListener("click", function () {
@@ -70,6 +96,14 @@ mobileBtnClose.addEventListener("click", function () {
   mobileBtnClose.classList.toggle("active");
   body.classList.toggle("fixed");
 });
+
+for (let i = 0; i < mobileDropdownTabs.length; i++) {
+  mobileDropdownTabs[i].addEventListener("click", function () {
+    mobileDropdownTabContents[i].classList.toggle("active");
+    mobileDropdownTabIcons[i].classList.toggle("active");
+  });
+}
+
 //testimonials
 for (let i = 0; i < brandTestimonials.length; i++) {
   brandTestimonials[i].addEventListener("click", function () {

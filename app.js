@@ -17,6 +17,10 @@ const bagDropDownClose = document.querySelector(".bag-dropdown-close");
 const bodyBg = document.querySelector(".nav-main-bag-dropdown-bg");
 const body = document.querySelector("body");
 
+const mobileBtnOpen = document.querySelector(".mobile-btn-open");
+const mobileBtnClose = document.querySelector(".mobile-btn-close");
+const mobileNav = document.querySelector(".mobile-nav");
+
 //change lime nav text
 let i = 0;
 function changeText() {
@@ -42,16 +46,30 @@ userDropdown.addEventListener("blur", () => {
 //bag dropdown
 bagDropDown.addEventListener("click", () => {
   bagDropDownContent.classList.add("bag-active");
-  body.classList.add("fixed");
+  body.classList.toggle("fixed");
   bodyBg.classList.toggle("active");
 });
 
 bagDropDownClose.addEventListener("click", () => {
   bagDropDownContent.classList.remove("bag-active");
-  body.classList.remove("fixed");
+  body.classList.toggle("fixed");
   bodyBg.classList.toggle("active");
 });
 
+//mobile nav
+mobileBtnOpen.addEventListener("click", function () {
+  mobileNav.classList.toggle("active");
+  mobileBtnOpen.classList.toggle("active");
+  mobileBtnClose.classList.toggle("active");
+  body.classList.toggle("fixed");
+});
+
+mobileBtnClose.addEventListener("click", function () {
+  mobileNav.classList.toggle("active");
+  mobileBtnOpen.classList.toggle("active");
+  mobileBtnClose.classList.toggle("active");
+  body.classList.toggle("fixed");
+});
 //testimonials
 for (let i = 0; i < brandTestimonials.length; i++) {
   brandTestimonials[i].addEventListener("click", function () {

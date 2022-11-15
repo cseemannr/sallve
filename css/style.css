@@ -60,7 +60,7 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .outline-btn {
@@ -175,11 +175,6 @@ input[type="search"] {
 
 .nav-icon-search {
   margin-top: 2px;
-}
-
-.mobile-btn-open,
-.mobile-btn-close {
-  display: none;
 }
 
 .nav-search,
@@ -497,12 +492,6 @@ input[type="search"] {
   position: fixed;
 }
 
-.active {
-  display: block;
-  visibility: visible;
-  opacity: 1;
-}
-
 .bag-active {
   display: flex;
   visibility: visible;
@@ -512,8 +501,22 @@ input[type="search"] {
 
 /* mobile menu */
 
+.mobile-btn-open,
+.mobile-btn-close,
+.mobile-btn {
+  display: none;
+}
+
 .mobile-nav {
   height: 100%;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* .mobile-nav-bg {

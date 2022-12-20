@@ -49,15 +49,6 @@ userDropdown.addEventListener("blur", () => {
   userDropdownContent.classList.remove("active");
 });
 
-// window.onclick = function (e) {
-//   if (
-//     !e.target.matches(".nav-main-user") &&
-//     userDropdownContent.classList.contains("active")
-//   ) {
-//     userDropdownContent.classList.remove("active");
-//   }
-// };
-
 //bag dropdown
 bagDropDown.addEventListener("click", () => {
   bagDropDownContent.classList.add("active");
@@ -70,17 +61,6 @@ bagDropDownClose.addEventListener("click", () => {
   body.classList.toggle("fixed");
   bodyBg.classList.toggle("active");
 });
-
-// window.onclick = function (e) {
-//   if (
-//     !e.target.matches(".nav-main-bag") &&
-//     bagDropDownContent.classList.contains("active")
-//   ) {
-//     bagDropDownContent.classList.remove("active");
-//     body.classList.toggle("fixed");
-//     bodyBg.classList.toggle("active");
-//   }
-// };
 
 //mobile nav
 mobileBtnOpen.addEventListener("click", function () {

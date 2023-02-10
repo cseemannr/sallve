@@ -257,3 +257,14 @@
     margin-right: 10px;
   }
 }
+
+@media (max-width: 500px) {
+  .brands img {
+    max-width: 70px;
+    margin: 10px 10px 0;
+  }
+
+  .testimonials {
+    height: 240px;
+  }
+}
